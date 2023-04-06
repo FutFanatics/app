@@ -21,9 +21,10 @@ $vitrine-gray: #747474;
 @import "app/home";
 @import "app/benefits";
 @import "app/details";
+@import "app/enjoy";
 @import "app/vitrine";
 @import "app/chronology";
-@import "app/curiosity";
+@import "app/question";
 @import "../fonts/icons-font";
 @mixin md{
     @media (min-width: 1200px) { @content; }

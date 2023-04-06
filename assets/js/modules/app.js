@@ -468,7 +468,6 @@
 		}
 		return true;
 	}
-	
 
 })(jQuery);
 

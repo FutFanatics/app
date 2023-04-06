@@ -1,0 +1,45 @@
+
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
+
+.c-question{
+    padding: 70px 0px;
+    .question{
+        &-title{
+            color: #1E1E1E;
+            font-size: 80px;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+        
+        &-box{
+            width: 100%;
+            text-align: start;
+            color:#1E1E1E;
+            text-decoration: none;
+
+            padding: 0.5rem 0rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span{
+                font-size: 20px;
+                font-weight: 700;
+            }
+            i{
+                font-size: 25px;
+            }
+        }
+    }
+    .card{
+        border: none;
+    }
+    .card-header{
+        background-color: transparent;
+        padding: 0.5rem 0rem;
+        border: none;
+        border-bottom: 1px solid #898989;
+    }
+}

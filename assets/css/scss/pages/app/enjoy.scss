@@ -1,0 +1,70 @@
+
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
+
+.c-enjoy{
+    padding: 70px 0px;
+    background-color: #F3F3F3;
+
+    @include md{
+        padding: 70px 0px;
+    }
+    .enjoy{
+        &-title{
+            color: #192C53;
+            font-weight: 600;
+            font-size: 35px;
+            text-align: center;
+            letter-spacing: 0px;
+
+            @include md{
+                font-size: 50px;
+                font-weight: 800;
+                text-align: start;
+            }
+            strong{
+                font-weight: 700;
+            }
+        }
+        &-subtitle{
+            font-weight: 600;
+            font-size: 48px;
+            color: #192C53;
+        }
+        &-install{
+            margin-top: 16px;
+            display:  flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include md{
+                margin-top: 32px;
+            }
+            a{
+                height: 50px;
+                width: auto;
+                margin-right:0px ;
+                margin-top: 16px;
+
+                @include md{
+                    margin-right:8px ;
+                    margin-top: 0px;
+                }
+
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+            .enjoy-app{
+                object-fit: contain;
+            }
+
+            @include md{
+                flex-direction: row;
+            }
+        }
+        
+    }
+
+}
