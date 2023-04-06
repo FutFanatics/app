@@ -1,0 +1,45 @@
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
+
+.c-benefits{
+    padding: 70px 0px;
+    .title{
+        color: #000;
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+        padding: 20px 0px;
+    }
+    .item{
+        padding-right: 8px;
+    }
+    .benefits{
+        &-card{
+            background-color:#192C53;
+            min-height: 250px;
+            padding: 0px 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 20px;
+        }
+        &-icons{
+
+        }
+        &-title{
+            font-size:24px;
+            color: #00DF5E;
+            font-weight: 700;
+        }
+        &-describe{
+            color:#FFF;
+            font-weight: 300;
+
+            strong{
+                color: #00DF5E;
+                font-weight: 600;
+            }
+        }
+    }
+}
