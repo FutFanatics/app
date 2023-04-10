@@ -1458,6 +1458,10 @@ p {
   text-transform: uppercase;
 }
 
+.c-printscreen .printscreen-img {
+  max-height: 500px;
+}
+
 .c-enjoy {
   padding: 70px 0px;
   background-color: #F3F3F3;
@@ -1786,7 +1790,7 @@ p {
   padding: 70px 0px;
 }
 .c-question .question-title {
-  color: #1E1E1E;
+  color: #192C53;
   font-size: 80px;
   margin-bottom: 3rem;
   font-weight: 700;
@@ -1804,6 +1808,7 @@ p {
 .c-question .question-box span {
   font-size: 20px;
   font-weight: 700;
+  color: #192C53;
 }
 .c-question .question-box i {
   font-size: 25px;
