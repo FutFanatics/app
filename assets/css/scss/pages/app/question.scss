@@ -4,13 +4,24 @@
 }
 
 .c-question{
-    padding: 70px 0px;
+    padding: 60px 20px;
+
+    @include md{
+        padding: 70px 0px;
+    }
     .question{
         &-title{
             color: #192C53;
-            font-size: 80px;
-            margin-bottom: 3rem;
+            font-size: 42px;
+            margin-bottom: 1rem;
             font-weight: 700;
+            text-align: center;
+            
+            @include md{
+                text-align: start;
+                font-size: 60px;
+                margin-bottom: 3rem;
+            }
         }
         
         &-box{

@@ -5,6 +5,9 @@ $vitrine-blue: #192C53;
 $vitrine-gray: #747474;
 
 //@import "../_lib/progressive.css";
+@mixin md{
+    @media (min-width: 1200px) { @content; }
+}
 
 @import "../components/reset-tray";
 

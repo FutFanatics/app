@@ -1,27 +1,69 @@
 .c-printscreen{
-    .elipse{
-        position: absolute;
-        height: 665px;
-        left: -30%;
-        z-index: 0;
-    }
+        overflow-x: hidden;
+        padding: 40px 20px;
+
+        @include md{
+            padding: 60px 0px;
+        }
     .row-content-print{
-        padding: 60px 0px;
+        padding: 30px 0px;
         position: relative;
+
+        @include md{
+            padding: 60px 0px;
+        }
+
+        .elipse{
+            position: absolute;
+            height: 665px;
+            left: -30%;
+            z-index: 0;
+            display: none;
+
+            @include md{
+                display: block;
+            }
+        }
 
         &_left{
             flex-direction: row-reverse;
             .printscreen{
                 &-title{
-                    text-align: right;
+                    text-align: center;
+                    @include md{
+                        text-align: right;
+                    }
                 }
                 &-content{
-                    text-align: right;
+                    text-align: center;
+                    @include md{
+                        text-align: right;
+                    }
                 }
+            }
+            .elipse-left{
+                position: absolute;
+                height: 665px;
+                right: -45%;
+                z-index: 0;
+                display: none;
+
+                @include md{
+                    display: block;
+                }
+
             }
         }
     }
     .printscreen{
+        &-target{
+            width: 250px;
+            height: 250px;
+
+            @include md{
+                display: none;
+            }
+        }
         &-img{
             max-height: 500px;
             z-index: 1;
@@ -30,13 +72,28 @@
         &-title{
             color:#464646;
             font-weight: 700;
-            font-size: 40px;
+            font-size: 35px;
             padding-bottom: 16px;
+            text-align: center;
+            padding-top: 16px;
+
+            @include md{
+                padding-top: 0px;
+                text-align: start;
+                font-size: 44px;
+            }
         }
         &-content{
             color: #747474;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 18px;
+            text-align: center;
+            
+
+            @include md{
+                text-align: start;
+                font-size: 18px;
+            }
         }
     }
 }
