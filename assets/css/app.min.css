@@ -191,9 +191,9 @@ html .botao-lancamento {
 }
 @media (max-width: 767px) {
   html .botao-destaque,
-  html .botao-frete,
-  html .botao-indisponivel,
-  html .botao-lancamento {
+html .botao-frete,
+html .botao-indisponivel,
+html .botao-lancamento {
     margin: 5px 0;
     width: 100%;
   }
@@ -1458,8 +1458,39 @@ p {
   text-transform: uppercase;
 }
 
+.c-printscreen .elipse {
+  position: absolute;
+  height: 665px;
+  left: -30%;
+  z-index: 0;
+}
+.c-printscreen .row-content-print {
+  padding: 60px 0px;
+  position: relative;
+}
+.c-printscreen .row-content-print_left {
+  flex-direction: row-reverse;
+}
+.c-printscreen .row-content-print_left .printscreen-title {
+  text-align: right;
+}
+.c-printscreen .row-content-print_left .printscreen-content {
+  text-align: right;
+}
 .c-printscreen .printscreen-img {
   max-height: 500px;
+  z-index: 1;
+}
+.c-printscreen .printscreen-title {
+  color: #464646;
+  font-weight: 700;
+  font-size: 40px;
+  padding-bottom: 16px;
+}
+.c-printscreen .printscreen-content {
+  color: #747474;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .c-enjoy {
