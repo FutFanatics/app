@@ -410,35 +410,42 @@
 		$('.slick-nav_shirt').find('.slick-numbers .current').html(current < 10 ? "0" + current : current)}
 );
 
-	
+$('.question-box').on('click' , function(){
+
+	if(!$(this).hasClass('collapsed')){
+		$(this).find('.icon-arrow-down').css({transform: 'rotate(0deg)'});
+	} else {
+		$(this).find('.icon-arrow-down').css({transform: 'rotate(180deg)'});
+	}
+});
 
 
 
-	containerhistory.slick({
-		autoplay: false,
-		autoplaySpeed: 4000,
-		pauseOnFocus: false,
-		pauseOnHover: false,
-		arrows: true,
-		dots: false,
-		adaptiveHeight: true,
-		prevArrow: $('.slick-nav_historia').find('.slick-prev'),
-        nextArrow: $('.slick-nav_historia').find('.slick-next'),
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		responsive: [{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
+// 	containerhistory.slick({
+// 		autoplay: false,
+// 		autoplaySpeed: 4000,
+// 		pauseOnFocus: false,
+// 		pauseOnHover: false,
+// 		arrows: true,
+// 		dots: false,
+// 		adaptiveHeight: true,
+// 		prevArrow: $('.slick-nav_historia').find('.slick-prev'),
+//         nextArrow: $('.slick-nav_historia').find('.slick-next'),
+// 		slidesToShow: 1,
+// 		slidesToScroll: 1,
+// 		responsive: [{
+// 			breakpoint: 768,
+// 			settings: {
+// 				slidesToShow: 1,
+// 				slidesToScroll: 1,
 
-						}
+// 						}
 			
-			}]
-	}).on('afterChange', function(event, slick, currentSlide, nextSlide){
-		var current = currentSlide + 1;
-		$('.slick-nav_historia').find('.slick-numbers .current').html(current < 10 ? "0" + current : current)}
-);
+// 			}]
+// 	}).on('afterChange', function(event, slick, currentSlide, nextSlide){
+// 		var current = currentSlide + 1;
+// 		$('.slick-nav_historia').find('.slick-numbers .current').html(current < 10 ? "0" + current : current)}
+// );
 	
     function multiSlideAdaptiveHeight(slider) {
 

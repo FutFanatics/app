@@ -1051,13 +1051,24 @@ html .botao-lancamento:hover {
 }
 /** PAGE PALMEIRAS **/
 .c-home {
-  height: 90vh;
-  padding-top: 40px;
-  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/app/home/background-home.png");
+  height: 95vh;
+  display: flex;
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/app/home/background-mob.png");
   background-size: cover;
   background-position: center;
   margin-bottom: 40px;
   position: relative;
+  flex-direction: column;
+  padding: 0px 20px 0px 20px;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .c-home {
+    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/app/home/background-home.png");
+    padding: 40px 0px 0px 0px;
+    display: block;
+    height: 90vh;
+  }
 }
 .c-home .home-title {
   color: #FFF;
@@ -1069,16 +1080,31 @@ html .botao-lancamento:hover {
   color: #00DF5E;
 }
 .c-home .home-target {
-  padding-top: 16px;
+  padding-top: 0px;
+  margin-bottom: 46px;
+}
+@media (min-width: 1200px) {
+  .c-home .home-target {
+    padding-top: 16px;
+    margin-bottom: 0;
+  }
 }
 .c-home .home-target .target {
   border: 1px solid #fff;
-  border-radius: 15px;
-  padding: 8px 85px;
-  font-size: 16px;
+  border-radius: 40px;
+  padding: 8px 60px;
+  font-size: 18px;
   font-weight: 600;
   color: #fff;
   text-decoration: none;
+  width: 300px;
+}
+@media (min-width: 1200px) {
+  .c-home .home-target .target {
+    padding: 8px 85px;
+    border-radius: 15px;
+    width: auto;
+  }
 }
 .c-home .home-celphone {
   position: absolute;
@@ -1086,13 +1112,19 @@ html .botao-lancamento:hover {
   bottom: -80px;
   left: 50%;
   transform: translate(-50%);
+  display: none;
+}
+@media (min-width: 1200px) {
+  .c-home .home-celphone {
+    display: block;
+  }
 }
 .c-home .home-fav {
   position: absolute;
-  left: 16%;
-  bottom: 15%;
-  width: 115px;
-  height: 115px;
+  left: 10%;
+  bottom: 10%;
+  width: 90px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1100,7 +1132,7 @@ html .botao-lancamento:hover {
   border-radius: 100%;
 }
 .c-home .home-fav .fav-img {
-  width: 75px;
+  width: 60px;
   animation: pulse 3s ease-in-out infinite;
 }
 @keyframes pulse {
@@ -1114,12 +1146,25 @@ html .botao-lancamento:hover {
     transform: scale(1);
   }
 }
+@media (min-width: 1200px) {
+  .c-home .home-fav .fav-img {
+    width: 75px;
+  }
+}
+@media (min-width: 1200px) {
+  .c-home .home-fav {
+    left: 16%;
+    bottom: 15%;
+    width: 115px;
+    height: 115px;
+  }
+}
 .c-home .home-security {
   position: absolute;
-  left: 25%;
-  top: 28%;
-  width: 85px;
-  height: 85px;
+  left: 10%;
+  top: 2%;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1127,7 +1172,7 @@ html .botao-lancamento:hover {
   border-radius: 100%;
 }
 .c-home .home-security .cadeado-img {
-  width: 55px;
+  width: 40px;
   animation: virar 8s ease-in-out infinite;
 }
 @keyframes virar {
@@ -1141,12 +1186,25 @@ html .botao-lancamento:hover {
     transform: rotate(-10deg);
   }
 }
+@media (min-width: 1200px) {
+  .c-home .home-security .cadeado-img {
+    width: 55px;
+  }
+}
+@media (min-width: 1200px) {
+  .c-home .home-security {
+    left: 25%;
+    top: 28%;
+    width: 85px;
+    height: 85px;
+  }
+}
 .c-home .home-discount {
   position: absolute;
-  right: 20%;
-  bottom: 32%;
-  width: 110px;
-  height: 110px;
+  right: 8%;
+  bottom: 75%;
+  width: 90px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1155,7 +1213,12 @@ html .botao-lancamento:hover {
   animation: descer 6s ease-in-out infinite;
 }
 .c-home .home-discount .desconto-img {
-  width: 65px;
+  width: 55px;
+}
+@media (min-width: 1200px) {
+  .c-home .home-discount .desconto-img {
+    width: 65px;
+  }
 }
 @keyframes descer {
   0% {
@@ -1168,31 +1231,54 @@ html .botao-lancamento:hover {
     transform: rotate(-10deg);
   }
 }
+@media (min-width: 1200px) {
+  .c-home .home-discount {
+    right: 20%;
+    bottom: 32%;
+    width: 110px;
+    height: 110px;
+  }
+}
 .c-home .home-alert {
   position: absolute;
-  right: 20%;
-  bottom: -15%;
-  width: 200px;
-  height: 200px;
+  right: 10%;
+  bottom: -8%;
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px #021438 dashed;
   border-radius: 100%;
+}
+@media (min-width: 1200px) {
+  .c-home .home-alert {
+    border: 1px #021438 dashed;
+  }
 }
 .c-home .home-alert .box-alert {
   position: relative;
   background-color: #000F2D;
   border-radius: 100%;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 1200px) {
+  .c-home .home-alert .box-alert {
+    width: 80px;
+    height: 80px;
+  }
+}
 .c-home .home-alert .alert-img {
-  width: 65px;
+  width: 55px;
   animation: virar 8s ease-in-out infinite;
+}
+@media (min-width: 1200px) {
+  .c-home .home-alert .alert-img {
+    width: 65px;
+  }
 }
 @keyframes virar {
   0% {
@@ -1203,6 +1289,14 @@ html .botao-lancamento:hover {
   }
   100% {
     transform: rotate(-30deg);
+  }
+}
+@media (min-width: 1200px) {
+  .c-home .home-alert {
+    right: 20%;
+    bottom: -15%;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -1449,6 +1543,8 @@ html .botao-lancamento:hover {
 .c-printscreen .printscreen-img {
   max-height: 500px;
   z-index: 1;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 }
 .c-printscreen .printscreen-title {
   color: #464646;
@@ -1720,7 +1816,7 @@ html .botao-lancamento:hover {
 }
 .c-question .question-title {
   color: #192C53;
-  font-size: 42px;
+  font-size: 46px;
   margin-bottom: 1rem;
   font-weight: 700;
   text-align: center;
@@ -1746,6 +1842,7 @@ html .botao-lancamento:hover {
   font-size: 20px;
   font-weight: 700;
   color: #192C53;
+  font-family: "gotham";
 }
 .c-question .question-box i {
   font-size: 25px;
@@ -1758,6 +1855,9 @@ html .botao-lancamento:hover {
   padding: 0.5rem 0rem;
   border: none;
   border-bottom: 1px solid #898989;
+}
+.c-question .card-body {
+  font-family: "gotham";
 }
 
 @font-face {
