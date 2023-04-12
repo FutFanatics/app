@@ -146,6 +146,16 @@
             border: 1px #021438 dashed;
             border-radius: 100%;
             
+            .box-alert{
+                position: relative;
+                background-color: #000F2D;
+                border-radius: 100%;
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
             .alert-img{
                 width: 65px;
                 animation: virar 8s ease-in-out infinite;
@@ -153,13 +163,13 @@
 
                 @keyframes virar {
                     0%{
-                        transform: rotate(-10deg);
+                        transform: rotate(-30deg);
                     }
                     50%{
-                        transform: rotate(30deg);
+                        transform: rotate(20deg);
                     }
                     100%{
-                        transform:rotate(-10deg);
+                        transform:rotate(-30deg);
                     }      
                     
                 }

@@ -1180,19 +1180,29 @@ html .botao-lancamento:hover {
   border: 1px #021438 dashed;
   border-radius: 100%;
 }
+.c-home .home-alert .box-alert {
+  position: relative;
+  background-color: #000F2D;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .c-home .home-alert .alert-img {
   width: 65px;
   animation: virar 8s ease-in-out infinite;
 }
 @keyframes virar {
   0% {
-    transform: rotate(-10deg);
+    transform: rotate(-30deg);
   }
   50% {
-    transform: rotate(30deg);
+    transform: rotate(20deg);
   }
   100% {
-    transform: rotate(-10deg);
+    transform: rotate(-30deg);
   }
 }
 
