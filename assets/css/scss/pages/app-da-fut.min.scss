@@ -1,5 +1,5 @@
 
-//sass --watch assets/css/scss/pages/app.min.scss:assets/css/app.min.css
+//sass --watch assets/css/scss/pages/app-da-fut.min.scss:assets/css/app-da-fut.min.css
 
 $vitrine-blue: #192C53;
 $vitrine-gray: #747474;
@@ -21,13 +21,13 @@ $vitrine-gray: #747474;
 
 @import "../components/variables";
 
-@import "app/home";
-@import "app/benefits";
-@import "app/details";
-@import "app/printscreen";
-@import "app/enjoy";
-@import "app/install";
-@import "app/question";
+@import "app-da-fut/home";
+@import "app-da-fut/benefits";
+@import "app-da-fut/details";
+@import "app-da-fut/printscreen";
+@import "app-da-fut/enjoy";
+@import "app-da-fut/install";
+@import "app-da-fut/question";
 @import "../fonts/icons-font";
 @mixin md{
     @media (min-width: 1200px) { @content; }
